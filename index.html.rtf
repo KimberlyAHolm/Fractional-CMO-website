@@ -1,0 +1,964 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red27\green27\blue27;\red255\green255\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c14118\c14118\c14118;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!DOCTYPE html>\cf0 \cb1 \
+\
+\cf2 \cb3 <html lang="en">\cf0 \cb1 \
+\cf2 \cb3 <head>\cf0 \cb1 \
+\cf2 \cb3 <meta charset="UTF-8">\cf0 \cb1 \
+\cf2 \cb3 <meta name="viewport" content="width=device-width, initial-scale=1.0">\cf0 \cb1 \
+\cf2 \cb3 <title>Kimberly Holm | Fractional CMO | Northeast Ohio</title>\cf0 \cb1 \
+\cf2 \cb3 <link rel="preconnect" href="https://fonts.googleapis.com">\cf0 \cb1 \
+\cf2 \cb3 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">\cf0 \cb1 \
+\cf2 \cb3 <style>\cf0 \cb1 \
+\cf2 \cb3 \'a0 :root \{\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 --ink: #1a1a18;\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 --warm-white: #f5f2ec;\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 --cream: #ede9e0;\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 --sage: #6b7c5e;\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 --rust: #b5521b;\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 --muted: #8a8778;\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 --rule: #d4cfc4;\cf0 \cb1 \
+\cf2 \cb3 \'a0 \}\cf0 \cb1 \
+\
+\cf2 \cb3 *, *::before, *::after \{ box-sizing: border-box; margin: 0; padding: 0; \}\cf0 \cb1 \
+\
+\cf2 \cb3 html \{ scroll-behavior: smooth; \}\cf0 \cb1 \
+\
+\cf2 \cb3 body \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91DM Sans\'92, sans-serif;\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 font-size: 16px;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.7;\cf0 \cb1 \
+\cf2 \cb3 overflow-x: hidden;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* NAV */\cf0 \cb1 \
+\cf2 \cb3 nav \{\cf0 \cb1 \
+\cf2 \cb3 position: fixed;\cf0 \cb1 \
+\cf2 \cb3 top: 0; left: 0; right: 0;\cf0 \cb1 \
+\cf2 \cb3 z-index: 100;\cf0 \cb1 \
+\cf2 \cb3 display: flex;\cf0 \cb1 \
+\cf2 \cb3 justify-content: space-between;\cf0 \cb1 \
+\cf2 \cb3 align-items: center;\cf0 \cb1 \
+\cf2 \cb3 padding: 1.25rem 4vw;\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 border-bottom: 1px solid var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 opacity: 0;\cf0 \cb1 \
+\cf2 \cb3 animation: fadeIn 0.8s 0.2s forwards;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .nav-name \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 1.15rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 400;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.08em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 text-decoration: none;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .nav-cta \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.75rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 500;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.12em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 text-decoration: none;\cf0 \cb1 \
+\cf2 \cb3 border-bottom: 1px solid var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 padding-bottom: 1px;\cf0 \cb1 \
+\cf2 \cb3 transition: opacity 0.2s;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .nav-cta:hover \{ opacity: 0.65; \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* HERO */\cf0 \cb1 \
+\cf2 \cb3 .hero \{\cf0 \cb1 \
+\cf2 \cb3 min-height: 100vh;\cf0 \cb1 \
+\cf2 \cb3 display: grid;\cf0 \cb1 \
+\cf2 \cb3 grid-template-columns: 1fr 1fr;\cf0 \cb1 \
+\cf2 \cb3 padding-top: 80px;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-left \{\cf0 \cb1 \
+\cf2 \cb3 padding: 8vw 5vw 8vw 8vw;\cf0 \cb1 \
+\cf2 \cb3 display: flex;\cf0 \cb1 \
+\cf2 \cb3 flex-direction: column;\cf0 \cb1 \
+\cf2 \cb3 justify-content: center;\cf0 \cb1 \
+\cf2 \cb3 border-right: 1px solid var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 opacity: 0;\cf0 \cb1 \
+\cf2 \cb3 animation: slideUp 0.9s 0.4s forwards;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-eyebrow \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.7rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 500;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.2em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96sage);\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 2rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-headline \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: clamp(2.8rem, 5vw, 4.5rem);\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.1;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 2rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-headline em \{\cf0 \cb1 \
+\cf2 \cb3 font-style: italic;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-sub \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 1rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 max-width: 42ch;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.75;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 3rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .btn-primary \{\cf0 \cb1 \
+\cf2 \cb3 display: inline-block;\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91DM Sans\'92, sans-serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.75rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 500;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.15em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 text-decoration: none;\cf0 \cb1 \
+\cf2 \cb3 padding: 1rem 2.5rem;\cf0 \cb1 \
+\cf2 \cb3 transition: background 0.25s, color 0.25s;\cf0 \cb1 \
+\cf2 \cb3 align-self: flex-start;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .btn-primary:hover \{\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-right \{\cf0 \cb1 \
+\cf2 \cb3 padding: 8vw 8vw 8vw 5vw;\cf0 \cb1 \
+\cf2 \cb3 display: flex;\cf0 \cb1 \
+\cf2 \cb3 flex-direction: column;\cf0 \cb1 \
+\cf2 \cb3 justify-content: center;\cf0 \cb1 \
+\cf2 \cb3 opacity: 0;\cf0 \cb1 \
+\cf2 \cb3 animation: slideUp 0.9s 0.65s forwards;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-stat-grid \{\cf0 \cb1 \
+\cf2 \cb3 display: grid;\cf0 \cb1 \
+\cf2 \cb3 grid-template-columns: 1fr 1fr;\cf0 \cb1 \
+\cf2 \cb3 gap: 2.5rem 3rem;\cf0 \cb1 \
+\cf2 \cb3 margin-top: 2rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-stat-label \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.65rem;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.18em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96sage);\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 0.4rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-stat-number \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 3rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-stat-desc \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.8rem;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 margin-top: 0.3rem;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.5;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .hero-right-intro \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 1.25rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 font-style: italic;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 border-left: 2px solid var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 padding-left: 1.5rem;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.6;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* SECTION BASE */\cf0 \cb1 \
+\cf2 \cb3 section \{\cf0 \cb1 \
+\cf2 \cb3 padding: 7rem 8vw;\cf0 \cb1 \
+\cf2 \cb3 border-top: 1px solid var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .section-label \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.65rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 500;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.22em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96sage);\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 3rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .section-headline \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: clamp(2rem, 3.5vw, 3rem);\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.15;\cf0 \cb1 \
+\cf2 \cb3 max-width: 22ch;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 1.5rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .section-body \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 1rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 max-width: 55ch;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.8;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* PROBLEM */\cf0 \cb1 \
+\cf2 \cb3 .problem \{\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .problem .section-label \{ color: var(\'96sage); \}\cf0 \cb1 \
+\
+\cf2 \cb3 .problem .section-headline \{ color: var(\'96warm-white); \}\cf0 \cb1 \
+\
+\cf2 \cb3 .problem-grid \{\cf0 \cb1 \
+\cf2 \cb3 display: grid;\cf0 \cb1 \
+\cf2 \cb3 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));\cf0 \cb1 \
+\cf2 \cb3 gap: 3rem;\cf0 \cb1 \
+\cf2 \cb3 margin-top: 4rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .problem-item-number \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 3.5rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 line-height: 1;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 1rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .problem-item-title \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.9rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 500;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.05em;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 0.75rem;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .problem-item-body \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.85rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: #a09e96;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.7;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .problem-close \{\cf0 \cb1 \
+\cf2 \cb3 margin-top: 5rem;\cf0 \cb1 \
+\cf2 \cb3 padding-top: 3rem;\cf0 \cb1 \
+\cf2 \cb3 border-top: 1px solid #333;\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 1.5rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 font-style: italic;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96cream);\cf0 \cb1 \
+\cf2 \cb3 max-width: 60ch;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .problem-close span \{ color: var(\'96rust); \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* SERVICES */\cf0 \cb1 \
+\cf2 \cb3 .services-layout \{\cf0 \cb1 \
+\cf2 \cb3 display: grid;\cf0 \cb1 \
+\cf2 \cb3 grid-template-columns: 1fr 2fr;\cf0 \cb1 \
+\cf2 \cb3 gap: 5rem;\cf0 \cb1 \
+\cf2 \cb3 align-items: start;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .services-intro \{ \}\cf0 \cb1 \
+\
+\cf2 \cb3 .services-grid \{\cf0 \cb1 \
+\cf2 \cb3 display: grid;\cf0 \cb1 \
+\cf2 \cb3 grid-template-columns: 1fr 1fr;\cf0 \cb1 \
+\cf2 \cb3 gap: 0;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .service-item \{\cf0 \cb1 \
+\cf2 \cb3 padding: 2rem;\cf0 \cb1 \
+\cf2 \cb3 border: 1px solid var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 margin: -1px 0 0 -1px;\cf0 \cb1 \
+\cf2 \cb3 transition: background 0.2s;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .service-item:hover \{\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96cream);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .service-icon \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 1.5rem;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 1rem;\cf0 \cb1 \
+\cf2 \cb3 display: block;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .service-title \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 1.2rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 400;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 0.6rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .service-desc \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.8rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.65;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* PROOF */\cf0 \cb1 \
+\cf2 \cb3 .proof \{\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96cream);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .proof-layout \{\cf0 \cb1 \
+\cf2 \cb3 display: grid;\cf0 \cb1 \
+\cf2 \cb3 grid-template-columns: 1fr 1fr;\cf0 \cb1 \
+\cf2 \cb3 gap: 4rem;\cf0 \cb1 \
+\cf2 \cb3 margin-top: 4rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .proof-item \{\cf0 \cb1 \
+\cf2 \cb3 padding-top: 2rem;\cf0 \cb1 \
+\cf2 \cb3 border-top: 2px solid var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 transition: border-color 0.2s;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .proof-item:hover \{\cf0 \cb1 \
+\cf2 \cb3 border-top-color: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .proof-metric \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 2.5rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 line-height: 1;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 0.75rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .proof-context \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.7rem;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.14em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96sage);\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 0.75rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .proof-desc \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.88rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.7;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .awards-strip \{\cf0 \cb1 \
+\cf2 \cb3 margin-top: 5rem;\cf0 \cb1 \
+\cf2 \cb3 padding-top: 3rem;\cf0 \cb1 \
+\cf2 \cb3 border-top: 1px solid var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .awards-label \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.65rem;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.2em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96sage);\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 1.5rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .awards-list \{\cf0 \cb1 \
+\cf2 \cb3 display: flex;\cf0 \cb1 \
+\cf2 \cb3 flex-wrap: wrap;\cf0 \cb1 \
+\cf2 \cb3 gap: 0.75rem 2rem;\cf0 \cb1 \
+\cf2 \cb3 list-style: none;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .awards-list li \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.8rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .awards-list li::before \{\cf0 \cb1 \
+\cf2 \cb3 content: \'93\'97\'94;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 margin-right: 0.5rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* WHO */\cf0 \cb1 \
+\cf2 \cb3 .who-layout \{\cf0 \cb1 \
+\cf2 \cb3 display: grid;\cf0 \cb1 \
+\cf2 \cb3 grid-template-columns: 1fr 1fr;\cf0 \cb1 \
+\cf2 \cb3 gap: 5rem;\cf0 \cb1 \
+\cf2 \cb3 align-items: start;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .who-list \{\cf0 \cb1 \
+\cf2 \cb3 list-style: none;\cf0 \cb1 \
+\cf2 \cb3 margin-top: 2rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .who-list li \{\cf0 \cb1 \
+\cf2 \cb3 padding: 1.5rem 0;\cf0 \cb1 \
+\cf2 \cb3 border-bottom: 1px solid var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 display: flex;\cf0 \cb1 \
+\cf2 \cb3 align-items: baseline;\cf0 \cb1 \
+\cf2 \cb3 gap: 1rem;\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.9rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.6;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .who-list li::before \{\cf0 \cb1 \
+\cf2 \cb3 content: \'93\uc0\u8594 \'94;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.8rem;\cf0 \cb1 \
+\cf2 \cb3 flex-shrink: 0;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .who-right \{\cf0 \cb1 \
+\cf2 \cb3 padding: 3rem;\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96cream);\cf0 \cb1 \
+\cf2 \cb3 border-left: 3px solid var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .who-right-headline \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 1.6rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 font-style: italic;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.4;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 1.5rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .who-right-body \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.85rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.8;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* CTA */\cf0 \cb1 \
+\cf2 \cb3 .cta \{\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 text-align: center;\cf0 \cb1 \
+\cf2 \cb3 padding: 8rem 8vw;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .cta .section-label \{ color: var(\'96sage); text-align: center; \}\cf0 \cb1 \
+\
+\cf2 \cb3 .cta-headline \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: clamp(2.2rem, 4vw, 3.5rem);\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.15;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 max-width: 30ch;\cf0 \cb1 \
+\cf2 \cb3 margin: 0 auto 1.5rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .cta-sub \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.95rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: #a09e96;\cf0 \cb1 \
+\cf2 \cb3 max-width: 48ch;\cf0 \cb1 \
+\cf2 \cb3 margin: 0 auto 3rem;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.8;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .btn-light \{\cf0 \cb1 \
+\cf2 \cb3 display: inline-block;\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91DM Sans\'92, sans-serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.75rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 500;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.15em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 text-decoration: none;\cf0 \cb1 \
+\cf2 \cb3 padding: 1.1rem 3rem;\cf0 \cb1 \
+\cf2 \cb3 transition: background 0.25s, color 0.25s;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .btn-light:hover \{\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* FOOTER */\cf0 \cb1 \
+\cf2 \cb3 footer \{\cf0 \cb1 \
+\cf2 \cb3 padding: 2.5rem 8vw;\cf0 \cb1 \
+\cf2 \cb3 border-top: 1px solid var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 display: flex;\cf0 \cb1 \
+\cf2 \cb3 justify-content: space-between;\cf0 \cb1 \
+\cf2 \cb3 align-items: center;\cf0 \cb1 \
+\cf2 \cb3 flex-wrap: wrap;\cf0 \cb1 \
+\cf2 \cb3 gap: 1rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .footer-name \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 1rem;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.08em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .footer-meta \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.75rem;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* ANIMATIONS */\cf0 \cb1 \
+\cf2 \cb3 @keyframes fadeIn \{\cf0 \cb1 \
+\cf2 \cb3 to \{ opacity: 1; \}\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 @keyframes slideUp \{\cf0 \cb1 \
+\cf2 \cb3 from \{ opacity: 0; transform: translateY(24px); \}\cf0 \cb1 \
+\cf2 \cb3 to \{ opacity: 1; transform: translateY(0); \}\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .reveal \{\cf0 \cb1 \
+\cf2 \cb3 opacity: 0;\cf0 \cb1 \
+\cf2 \cb3 transform: translateY(20px);\cf0 \cb1 \
+\cf2 \cb3 transition: opacity 0.7s ease, transform 0.7s ease;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 .reveal.visible \{\cf0 \cb1 \
+\cf2 \cb3 opacity: 1;\cf0 \cb1 \
+\cf2 \cb3 transform: translateY(0);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* APPROACH */\cf0 \cb1 \
+\cf2 \cb3 .approach \{\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96ink);\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .approach .section-label \{ color: var(\'96sage); \}\cf0 \cb1 \
+\cf2 \cb3 .approach .section-headline \{ color: var(\'96warm-white); max-width: 100%; \}\cf0 \cb1 \
+\cf2 \cb3 .approach-grid \{\cf0 \cb1 \
+\cf2 \cb3 display: grid;\cf0 \cb1 \
+\cf2 \cb3 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));\cf0 \cb1 \
+\cf2 \cb3 gap: 3rem;\cf0 \cb1 \
+\cf2 \cb3 margin-top: 4rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .approach-item \{\cf0 \cb1 \
+\cf2 \cb3 border-top: 2px solid var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 padding-top: 1.5rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .approach-title \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 1.3rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 400;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96warm-white);\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 0.75rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .approach-body \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.85rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: #a09e96;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.75;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* ENGAGEMENT */\cf0 \cb1 \
+\cf2 \cb3 .engagement-grid \{\cf0 \cb1 \
+\cf2 \cb3 display: grid;\cf0 \cb1 \
+\cf2 \cb3 grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));\cf0 \cb1 \
+\cf2 \cb3 gap: 2rem;\cf0 \cb1 \
+\cf2 \cb3 margin-top: 4rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .engagement-card \{\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96cream);\cf0 \cb1 \
+\cf2 \cb3 padding: 2.5rem;\cf0 \cb1 \
+\cf2 \cb3 border-bottom: 3px solid var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 transition: border-color 0.2s;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .engagement-card:hover \{ border-bottom-color: var(\'96rust); \}\cf0 \cb1 \
+\cf2 \cb3 .engagement-type \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.65rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 500;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.2em;\cf0 \cb1 \
+\cf2 \cb3 text-transform: uppercase;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96rust);\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 1rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .engagement-title \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 1.5rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 400;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 1rem;\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.2;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .engagement-desc \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.85rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 line-height: 1.75;\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 1.25rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .engagement-fits \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.75rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 500;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96sage);\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.05em;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* TESTIMONIALS */\cf0 \cb1 \
+\cf2 \cb3 .testimonials \{\cf0 \cb1 \
+\cf2 \cb3 background: var(\'96cream);\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .testimonials .section-label \{ \}\cf0 \cb1 \
+\cf2 \cb3 .testimonials-placeholder \{\cf0 \cb1 \
+\cf2 \cb3 margin-top: 4rem;\cf0 \cb1 \
+\cf2 \cb3 border: 1.5px dashed var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 padding: 4rem 3rem;\cf0 \cb1 \
+\cf2 \cb3 text-align: center;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .testimonials-placeholder-text \{\cf0 \cb1 \
+\cf2 \cb3 font-family: \'91Cormorant Garamond\'92, serif;\cf0 \cb1 \
+\cf2 \cb3 font-size: 1.4rem;\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 font-style: italic;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96muted);\cf0 \cb1 \
+\cf2 \cb3 margin-bottom: 1rem;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 .testimonials-placeholder-sub \{\cf0 \cb1 \
+\cf2 \cb3 font-size: 0.78rem;\cf0 \cb1 \
+\cf2 \cb3 color: var(\'96rule);\cf0 \cb1 \
+\cf2 \cb3 font-weight: 300;\cf0 \cb1 \
+\cf2 \cb3 letter-spacing: 0.08em;\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 /* RESPONSIVE */\cf0 \cb1 \
+\cf2 \cb3 @media (max-width: 900px) \{\cf0 \cb1 \
+\cf2 \cb3 .hero \{ grid-template-columns: 1fr; min-height: auto; \}\cf0 \cb1 \
+\cf2 \cb3 .hero-left \{ border-right: none; border-bottom: 1px solid var(\'96rule); padding: 6rem 6vw 4rem; \}\cf0 \cb1 \
+\cf2 \cb3 .hero-right \{ padding: 4rem 6vw; \}\cf0 \cb1 \
+\cf2 \cb3 .services-layout \{ grid-template-columns: 1fr; gap: 3rem; \}\cf0 \cb1 \
+\cf2 \cb3 .proof-layout \{ grid-template-columns: 1fr; gap: 2rem; \}\cf0 \cb1 \
+\cf2 \cb3 .who-layout \{ grid-template-columns: 1fr; gap: 3rem; \}\cf0 \cb1 \
+\cf2 \cb3 .services-grid \{ grid-template-columns: 1fr; \}\cf0 \cb1 \
+\cf2 \cb3 .hero-stat-grid \{ grid-template-columns: 1fr 1fr; \}\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\
+\cf2 \cb3 @media (max-width: 600px) \{\cf0 \cb1 \
+\cf2 \cb3 section \{ padding: 5rem 6vw; \}\cf0 \cb1 \
+\cf2 \cb3 .hero-stat-grid \{ grid-template-columns: 1fr; \}\cf0 \cb1 \
+\cf2 \cb3 footer \{ flex-direction: column; align-items: flex-start; \}\cf0 \cb1 \
+\cf2 \cb3 \}\cf0 \cb1 \
+\cf2 \cb3 </style>\cf0 \cb1 \
+\
+\cf2 \cb3 </head>\cf0 \cb1 \
+\cf2 \cb3 <body>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- NAV -->\cf0 \cb1 \
+\
+\cf2 \cb3 <nav>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <a href="#" class="nav-name">Kimberly A. Holm</a>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <a href="#contact" class="nav-cta">Schedule a Consultation</a>\cf0 \cb1 \
+\cf2 \cb3 </nav>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- HERO -->\cf0 \cb1 \
+\
+\cf2 \cb3 <section class="hero" style="border-top:none; padding:0;">\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="hero-left">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <p class="hero-eyebrow">Fractional CMO &nbsp;\'b7&nbsp; Northeast Ohio</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <h1 class="hero-headline">Marketing leadership that <em>serves the mission</em> and moves the numbers.</h1>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <p class="hero-sub">Whether your organization is mission-driven, profit-driven, or both, I bring the same thing: 30 years of senior-level marketing expertise, without the cost of a full-time hire.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <a href="#contact" class="btn-primary">Schedule a Free Consultation</a>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="hero-right">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <p class="hero-right-intro">"I've always been drawn to organizations where communication supports people and strengthens what the work is really about."</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="hero-stat-grid">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-label">Years of Experience</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-number">30</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-desc">Healthcare, higher ed, nonprofit, public media, banking, agency</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-label">Campaign Mobilization</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-number">16.7K</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-desc">Constituents activated in a single advocacy campaign</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-label">Surgical Growth</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-number">35%</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-desc">Increase in procedures from targeted campaign at Summa Health</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-label">Social Reach</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-number">1M+</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="hero-stat-desc">Facebook reach growth from thousands, Ohio public media leader</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 </section>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- PROBLEM -->\cf0 \cb1 \
+\
+\cf2 \cb3 <section class="problem reveal">\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="section-label">The Challenge</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <h2 class="section-headline">You have a strong organization. Your marketing isn't keeping up.</h2>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="problem-grid">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="problem-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-number">01</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-title">No marketing voice at the table</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-body">Leadership makes decisions without senior marketing counsel. Strategy is reactive instead of planned.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="problem-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-number">02</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-title">Campaigns without strategy</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-body">Work goes out the door without clear objectives, audience alignment, or a way to measure what's working.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="problem-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-number">03</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-title">Agencies without direction</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-body">You've hired outside help that delivers deliverables but not results. No one is connecting their work to your goals.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="problem-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-number">04</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-title">Growth that has stalled</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="problem-item-body">Awareness, enrollment, donations, pipeline \'97 whatever the metric, it has plateaued and you're not sure why.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="problem-close">You don't need more tactics. You need someone who can see the whole picture, align the team around it, <span>and make it happen.</span></p>\cf0 \cb1 \
+\cf2 \cb3 </section>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- SERVICES -->\cf0 \cb1 \
+\
+\cf2 \cb3 <section class="reveal">\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="services-layout">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="services-intro">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="section-label">What I Do</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <h2 class="section-headline">Strategic partnership, not vendor relationship.</h2>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="section-body">I work as an embedded partner in your organization \'97 invested in your outcomes, not just your deliverables. Engagements are flexible and built around your needs.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="services-grid">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div class="service-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <span class="service-icon">\uc0\u9672 </span>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-title">Marketing & Brand Strategy</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-desc">Situational analysis, messaging frameworks, and integrated plans aligned to your mission and market.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div class="service-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <span class="service-icon">\uc0\u9678 </span>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-title">Campaign Planning & Demand Generation</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-desc">From audience research to post-campaign analysis. Built to drive measurable results.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div class="service-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <span class="service-icon">\uc0\u9671 </span>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-title">Communications & Stakeholder Messaging</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-desc">Internal and external communications that keep your brand consistent and your audience informed.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div class="service-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <span class="service-icon">\uc0\u9673 </span>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-title">Team Leadership & Coaching</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-desc">Hiring, mentoring, and leading marketing teams. I build capacity \'97 not dependency.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div class="service-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <span class="service-icon">\uc0\u9650 </span>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-title">Operational Systems & Reporting</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-desc">KPI dashboards and reporting structures that give leadership clear visibility into what's working.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <div class="service-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <span class="service-icon">\uc0\u11041 </span>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-title">Fractional & Interim Executive Support</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <p class="service-desc">Flexible engagements for strategic partnerships, transitions, or interim CMO coverage.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 </section>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- PROOF -->\cf0 \cb1 \
+\
+\cf2 \cb3 <section class="proof reveal">\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="section-label">Results</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <h2 class="section-headline">30 years. Multiple industries. Real results.</h2>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="proof-layout">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="proof-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-metric">16,700+</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-context">Advocacy Campaign &nbsp;\'b7&nbsp; Public Media</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-desc">A multi-platform campaign responding to federal funding threats mobilized over 16,700 viewers to contact their representatives \'97 drawing direct attention from local legislators and demonstrating deep community trust.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="proof-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-metric">1M+</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-context">Social Reach &nbsp;\'b7&nbsp; Public Media</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-desc">Developed a content strategy built around defined pillars, mentored the team, and grew Facebook reach from thousands to over one million. Moved from last to first among Ohio public media stations.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="proof-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-metric">35%</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-context">Procedure Growth &nbsp;\'b7&nbsp; Healthcare</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-desc">A targeted campaign at Summa Health System grew lower GI and colorectal surgeries by 35% and upper GI procedures by 25% through smart audience segmentation and aligned physician and consumer outreach.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="proof-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-metric">National</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-context">Media Coverage &nbsp;\'b7&nbsp; Higher Education</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="proof-desc">Communications strategy for a bold tuition transformation at Hiram College generated national press coverage and a significant increase in enrollment inquiries \'97 proving what happens when an institutional story is told with clarity.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="awards-strip">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <p class="awards-label">Recognition</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <ul class="awards-list">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <li>Best of Show, Healthcare Advertising Award</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <li>Gold Addy Award</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <li>Silver Educational Advertising Award</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <li>Gold Aster Award</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <li>Gold CVA Award</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <li>Best of Show, SIAA</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <li>Regional Addy Award</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <li>Three KSHPRM Thoroughbred Awards</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </ul>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 </section>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- WHO -->\cf0 \cb1 \
+\
+\cf2 \cb3 <section class="reveal">\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="who-layout">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="section-label">Who I Work With</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <h2 class="section-headline">Mission-driven or growth-driven, the work looks the same.</h2>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="section-body">I've spent my career in organizations where the stakes are real and resources aren't unlimited. That experience translates well \'97 regardless of sector.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <ul class="who-list">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <li>Nonprofits and community organizations ready for strategic marketing leadership</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <li>Healthcare, higher education, and public sector organizations navigating growth or change</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <li>Small to mid-sized businesses in Northeast Ohio seeking senior expertise without the overhead</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <li>Organizations going through leadership transitions, rebrands, or market expansions</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 <li>B Corps and mission-aligned businesses that want marketing to reflect their values</li>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 </ul>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="who-right">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="who-right-headline">"I've always been drawn to roles where communication supports people and strengthens what the work is really about."</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="who-right-body">My career began in healthcare operations before moving into marketing \'97 and that foundation never left me. I understand how organizations actually work from the inside, how to communicate across departments, and how to build marketing systems that last beyond any single campaign or initiative.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="who-right-body" style="margin-top:1rem;">I'm based in Northeast Ohio and focus my practice here \'97 because I believe in the organizations doing good work in this region.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 </section>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- APPROACH -->\cf0 \cb1 \
+\
+\cf2 \cb3 <section class="approach reveal">\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="section-label">My Approach</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <h2 class="section-headline">How I work, and why it matters.</h2>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="approach-grid">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="approach-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="approach-title">Serve the mission, move the numbers.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="approach-body">Strategy that isn't connected to what your organization is trying to accomplish isn't strategy \'97 it's activity. I start with your mission and work outward from there, making sure every marketing decision has a reason behind it.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="approach-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="approach-title">Build capacity, not dependency.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="approach-body">My goal is to leave your team stronger than I found it. I hire, coach, and mentor the people around me. I build systems that work without me in the room. The measure of good fractional leadership is what stays when the engagement ends.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="approach-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="approach-title">Outcomes over deliverables.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="approach-body">A campaign that launches on time and misses the goal is not a success. I hold myself accountable to results \'97 awareness, pipeline, enrollment, loyalty, advocacy \'97 not just the production of work product.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="approach-item">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="approach-title">Integrity is non-negotiable.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="approach-body">I'll tell you what I actually think. If your strategy needs rethinking, I'll say so. If a vendor isn't performing, I'll name it. You deserve a partner who gives you an honest read, not just a comfortable one.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 </section>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- ENGAGEMENT MODELS -->\cf0 \cb1 \
+\
+\cf2 \cb3 <section class="reveal">\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="section-label">How We Work Together</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <h2 class="section-headline">Flexible engagements built around your needs.</h2>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="section-body">Every organization is at a different stage and has different needs. Here are the most common ways we engage \'97 and all of them start with a conversation.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="engagement-grid">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="engagement-card">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-type">Ongoing Partnership</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-title">Fractional CMO Retainer</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-desc">Embedded strategic leadership on a part-time basis. I join your leadership team, lead marketing strategy, guide your team, and own outcomes \'97 without the cost or commitment of a full-time hire.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-fits">Best for: Organizations ready for consistent, long-term marketing leadership.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="engagement-card">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-type">Defined Scope</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-title">Project-Based Engagement</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-desc">A focused engagement with clear deliverables \'97 a brand repositioning, a go-to-market strategy, a campaign launch, a marketing audit. We define the scope, set a timeline, and get it done.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-fits">Best for: Organizations with a specific challenge or initiative to address.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <div class="engagement-card">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-type">Bridge Leadership</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-title">Interim CMO Support</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-desc">When your marketing leader departs, a search takes time. I step in to keep strategy moving, protect momentum, support the team, and ensure continuity through the transition.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 <p class="engagement-fits">Best for: Organizations navigating a leadership gap or transition period.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 </section>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- TESTIMONIALS -->\cf0 \cb1 \
+\
+\cf2 \cb3 <section class="testimonials reveal">\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="section-label">What Clients Say</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <h2 class="section-headline">In their own words.</h2>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="section-body">The best measure of this work is what the people I've worked alongside have to say about it.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <div class="testimonials-placeholder">\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <p class="testimonials-placeholder-text">"Client testimonials coming soon."</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 <p class="testimonials-placeholder-sub">This section will feature voices from the organizations and leaders I've had the privilege of serving.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 </div>\cf0 \cb1 \
+\cf2 \cb3 </section>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- CTA -->\cf0 \cb1 \
+\
+\cf2 \cb3 <section class="cta reveal" id="contact" style="border-top: none;">\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="section-label">Let's Talk</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <h2 class="cta-headline">You don't have to figure out your marketing alone.</h2>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <p class="cta-sub">If your organization is ready for clearer strategy, stronger communications, and marketing connected to your mission and your goals \'97 I'd love to have a conversation. No pressure. Just 30 minutes to see if there's a fit.</p>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <a href="mailto:your@email.com" class="btn-light">Schedule a Free Consultation</a>\cf0 \cb1 \
+\cf2 \cb3 </section>\cf0 \cb1 \
+\
+\cf2 \cb3 <!-- FOOTER -->\cf0 \cb1 \
+\
+\cf2 \cb3 <footer>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <span class="footer-name">Kimberly A. Holm &nbsp;\'b7&nbsp; Fractional CMO</span>\cf0 \cb1 \
+\cf2 \cb3 \'a0 <span class="footer-meta">Northeast Ohio &nbsp;\'b7&nbsp; \'a9 2026</span>\cf0 \cb1 \
+\cf2 \cb3 </footer>\cf0 \cb1 \
+\
+\cf2 \cb3 <script>\cf0 \cb1 \
+\cf2 \cb3 \'a0 // Scroll reveal\cf0 \cb1 \
+\cf2 \cb3 \'a0 const reveals = document.querySelectorAll('.reveal');\cf0 \cb1 \
+\cf2 \cb3 \'a0 const observer = new IntersectionObserver((entries) => \{\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 entries.forEach(entry => \{\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 if (entry.isIntersecting) \{\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \'a0 entry.target.classList.add('visible');\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \'a0 \}\cf0 \cb1 \
+\cf2 \cb3 \'a0 \'a0 \});\cf0 \cb1 \
+\cf2 \cb3 \'a0 \}, \{ threshold: 0.08 \});\cf0 \cb1 \
+\cf2 \cb3 \'a0 reveals.forEach(el => observer.observe(el));\cf0 \cb1 \
+\cf2 \cb3 </script>\cf0 \cb1 \
+\
+\cf2 \cb3 </body>\cf0 \cb1 \
+\cf2 \cb3 </html>\cf0 \cb1 \
+}
