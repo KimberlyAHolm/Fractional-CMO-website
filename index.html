@@ -84,13 +84,15 @@ section{padding:7rem 8vw;border-top:1px solid #d4cfc4}
 .awards-remaining{padding-top:2rem;border-top:1px solid #d4cfc4;margin-top:2.5rem}
 .awards-remaining-label{font-size:0.6rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#6b7c5e;margin-bottom:1.25rem}
 .awards-list{list-style:none;display:flex;flex-wrap:wrap;gap:0.5rem}
-.awards-list li{background:#f5f2ec;border:1px solid #d4cfc4;border-left:2px solid #d4cfc4;padding:0.85rem 1.1rem;flex:1 1 340px;max-width:380px;transition:border-left-color 0.2s}
+.awards-list{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem}
+.awards-list li{background:#f5f2ec;border:1px solid #d4cfc4;border-left:2px solid #d4cfc4;padding:0.85rem 1.1rem;transition:border-left-color 0.2s}
 .awards-list li:hover{border-left-color:#b5521b}
 .li-award{display:block;font-size:0.78rem;font-weight:500;color:#1a1a18;margin-bottom:0.2rem}
 .li-award-level{color:#b5521b}
 .li-detail{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:#5c5b52;line-height:1.4}
 .li-org{display:block;font-size:0.7rem;font-weight:400;letter-spacing:0.04em;color:#6b7c5e;margin-top:0.2rem}
-@media(max-width:700px){.awards-featured{grid-template-columns:1fr}.awards-list li{flex:1 1 100%;max-width:100%}}
+@media(max-width:900px){.awards-featured{grid-template-columns:1fr 1fr}.awards-list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.awards-featured{grid-template-columns:1fr}.awards-list{grid-template-columns:1fr}}
 .who-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
 .who-list{list-style:none;margin-top:2rem}
 .who-list li{padding:1.5rem 0;border-bottom:1px solid #d4cfc4;display:flex;align-items:baseline;gap:1rem;font-size:0.9rem;font-weight:300;color:#1a1a18;line-height:1.6}
