@@ -71,11 +71,24 @@ section{padding:7rem 8vw;border-top:1px solid #d4cfc4}
 .proof-metric{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:#b5521b;line-height:1;margin-bottom:0.75rem}
 .proof-context{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:#6b7c5e;margin-bottom:0.75rem}
 .proof-desc{font-size:0.88rem;font-weight:400;color:#4a4a42;line-height:1.7}
-.awards-strip{margin-top:5rem;padding-top:3rem;border-top:1px solid #d4cfc4}
-.awards-label{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#6b7c5e;margin-bottom:1.5rem}
-.awards-list{display:flex;flex-wrap:wrap;gap:0.75rem 2rem;list-style:none}
-.awards-list li{font-size:0.8rem;font-weight:400;color:#4a4a42}
-.awards-list li::before{content:"—";color:#b5521b;margin-right:0.5rem}
+.awards-featured{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2.5rem}
+.award-card{background:#f5f2ec;padding:2rem 1.75rem;position:relative;overflow:hidden;border:1px solid #d4cfc4}
+.award-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:#d4cfc4;transition:background 0.25s}
+.award-card:hover::before{background:#b5521b}
+.award-distinction{font-size:0.6rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#6b7c5e;margin-bottom:0.75rem}
+.award-name{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,2vw,1.7rem);font-weight:300;color:#b5521b;line-height:1.15;margin-bottom:0.35rem}
+.award-project{font-family:'Cormorant Garamond',serif;font-size:0.92rem;font-weight:300;font-style:italic;color:#1a1a18;margin-bottom:0.3rem;line-height:1.4}
+.award-org{font-size:0.7rem;font-weight:400;letter-spacing:0.04em;color:#5c5b52}
+.awards-remaining{padding-top:2rem;border-top:1px solid #d4cfc4;margin-top:2.5rem}
+.awards-remaining-label{font-size:0.6rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#6b7c5e;margin-bottom:1.25rem}
+.awards-list{list-style:none;display:flex;flex-wrap:wrap;gap:0.5rem}
+.awards-list li{background:#f5f2ec;border:1px solid #d4cfc4;border-left:2px solid #d4cfc4;padding:0.85rem 1.1rem;flex:1 1 280px;max-width:420px;transition:border-left-color 0.2s}
+.awards-list li:hover{border-left-color:#b5521b}
+.li-award{display:block;font-size:0.78rem;font-weight:500;color:#1a1a18;margin-bottom:0.2rem}
+.li-award-level{color:#b5521b}
+.li-detail{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;color:#5c5b52;line-height:1.4}
+.li-org{display:block;font-size:0.7rem;font-weight:400;letter-spacing:0.04em;color:#6b7c5e;margin-top:0.2rem}
+@media(max-width:700px){.awards-featured{grid-template-columns:1fr}.awards-list li{flex:1 1 100%;max-width:100%}}
 .who-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
 .who-list{list-style:none;margin-top:2rem}
 .who-list li{padding:1.5rem 0;border-bottom:1px solid #d4cfc4;display:flex;align-items:baseline;gap:1rem;font-size:0.9rem;font-weight:300;color:#1a1a18;line-height:1.6}
@@ -497,19 +510,120 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
     </div>
   </div>
   <div class="awards-strip">
-    <p class="awards-label">Recognition</p>
+  <p class="awards-label">Recognition</p>
+
+  <div class="awards-featured">
+    <div class="award-card">
+      <p class="award-distinction">Best of Show</p>
+      <p class="award-name">Healthcare Advertising Award</p>
+      <p class="award-project">"Size Matters" TV Campaign</p>
+      <p class="award-org">Memorial Hospital of Union County</p>
+    </div>
+    <div class="award-card">
+      <p class="award-distinction">Best of Show</p>
+      <p class="award-name">SIAA Award</p>
+      <p class="award-project">"We Foresee" Direct Mail Campaign</p>
+      <p class="award-org">Citizens Bank</p>
+    </div>
+    <div class="award-card">
+      <p class="award-distinction">Gold</p>
+      <p class="award-name">Addy Award</p>
+      <p class="award-project">Women's Health Direct Mail Campaign</p>
+      <p class="award-org">Summa Health System</p>
+    </div>
+  </div>
+
+  <div class="awards-remaining">
+    <p class="awards-remaining-label">Additional Recognition</p>
     <ul class="awards-list">
-      <li>Best of Show, Healthcare Advertising Award</li>
-      <li>Gold Addy Award</li>
-      <li>Silver Educational Advertising Award</li>
-      <li>Gold Aster Award</li>
-      <li>Gold CVA Award</li>
-      <li>Best of Show, SIAA</li>
-      <li>Regional Addy Award</li>
-      <li>Three KSHPRM Thoroughbred Awards</li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Silver</span> — 35th Annual Educational Advertising Awards</span>
+        <span class="li-detail">"What Will You Do?" Total Advertising Campaign</span>
+        <span class="li-org">Hiram College</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Bronze</span> — 35th Annual Educational Advertising Awards</span>
+        <span class="li-detail">Acceptance Package</span>
+        <span class="li-org">Hiram College</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Bronze</span> — 35th Annual Educational Advertising Awards</span>
+        <span class="li-detail">"We Foresee" Direct Mail Campaign</span>
+        <span class="li-org">Citizens Bank</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Three Thoroughbred Awards</span> — KSHPRM</span>
+        <span class="li-detail">Cardiovascular Advertising — Print, Outdoor and Total Campaigns</span>
+        <span class="li-org">Ephraim McDowell Health</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Gold CVA</span> — Total Advertising Award</span>
+        <span class="li-detail">"I Choose" Campaign, hospital under 149 beds</span>
+        <span class="li-org">Memorial Hospital of Union County</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Gold Level</span> — SIAA</span>
+        <span class="li-detail">"Banking Your Way" TV Spot</span>
+        <span class="li-org">Citizens Bank</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Gold</span> — Addy Award</span>
+        <span class="li-detail">Women's Health Direct Mail Campaign</span>
+        <span class="li-org">Summa Health System</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Silver</span> — Addy Award</span>
+        <span class="li-detail">Testimonial TV Campaign</span>
+        <span class="li-org">Summa Health System</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Regional</span> — Addy Award</span>
+        <span class="li-detail">Women's Health Direct Mail Campaign</span>
+        <span class="li-org">Summa Health System</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Gold</span> — Aster Award</span>
+        <span class="li-detail">Oncology Insights Publication</span>
+        <span class="li-org">Summa Health System</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Gold</span> — Healthcare Advertising Award</span>
+        <span class="li-detail">Cancer Services Patient Binder</span>
+        <span class="li-org">Summa Health System</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Bronze</span> — Healthcare Advertising Award</span>
+        <span class="li-detail">Cancer Services Advertising Campaign</span>
+        <span class="li-org">Summa Health System</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Bronze</span> — Aster Award</span>
+        <span class="li-detail">Patient Education Booklet</span>
+        <span class="li-org">Summa Health System</span>
+      </li>
+
+      <li>
+        <span class="li-award"><span class="li-award-level">Gold Regional</span> — Addy Award</span>
+        <span class="li-detail">Community Health Report</span>
+        <span class="li-org">Summa Health System</span>
+      </li>
+
     </ul>
   </div>
-</section>
+</div>
 
 <!-- ABOUT -->
 <section id="about" class="reveal" style="padding: 80px 5%;"> 
