@@ -97,6 +97,26 @@ section{padding:7rem 8vw;border-top:1px solid #d4cfc4}
 .engagement-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;margin-bottom:1rem;line-height:1.2}
 .engagement-desc{font-size:0.85rem;font-weight:300;color:#8a8778;line-height:1.75;margin-bottom:1.25rem}
 .engagement-fits{font-size:0.75rem;font-weight:500;color:#6b7c5e;letter-spacing:0.05em}
+
+/* ── AI SECTION ── */
+.ai-section{background:#1a1a18;color:#f5f2ec}
+.ai-section .section-label{color:#6b7c5e}
+.ai-section .section-headline{color:#f5f2ec;max-width:28ch}
+.ai-body{max-width:65ch}
+.ai-body p{font-size:0.95rem;font-weight:300;color:#a09e96;line-height:1.85;margin-bottom:1.4rem}
+.ai-body p:last-child{margin-bottom:0}
+.ai-pullquote{margin-top:4rem;padding-top:3rem;border-top:1px solid #333;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;font-style:italic;color:#ede9e0;max-width:60ch}
+.ai-pullquote span{color:#b5521b}
+
+/* ── FAQ SECTION ── */
+.faq{background:#f5f2ec}
+.faq-list{margin-top:4rem;max-width:70ch}
+.faq-item{padding:2rem 0;border-bottom:1px solid #d4cfc4}
+.faq-item:first-child{border-top:1px solid #d4cfc4}
+.faq-q{font-size:0.9rem;font-weight:500;color:#1a1a18;letter-spacing:0.02em;margin-bottom:0.75rem;display:flex;align-items:baseline;gap:0.75rem}
+.faq-q::before{content:"Q";font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;color:#b5521b;flex-shrink:0}
+.faq-a{font-size:0.88rem;font-weight:300;color:#8a8778;line-height:1.8;padding-left:1.75rem}
+
 .testimonials{background:#ede9e0}
 .testimonials-placeholder{margin-top:4rem;border:1.5px dashed #d4cfc4;padding:4rem 3rem;text-align:center}
 .testimonials-placeholder-text{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;font-style:italic;color:#8a8778;margin-bottom:1rem}
@@ -115,30 +135,204 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
 .reveal{opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 @media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.hero-left{border-right:none;border-bottom:1px solid #d4cfc4;padding:6rem 6vw 4rem}.hero-right{padding:4rem 6vw}.services-layout{grid-template-columns:1fr;gap:3rem}.proof-layout{grid-template-columns:1fr;gap:2rem}.who-layout{grid-template-columns:1fr;gap:3rem}.services-grid{grid-template-columns:1fr}.hero-stat-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){section{padding:5rem 6vw}.hero-stat-grid{grid-template-columns:1fr}footer{flex-direction:column;align-items:flex-start}} 
+@media(max-width:600px){section{padding:5rem 6vw}.hero-stat-grid{grid-template-columns:1fr}footer{flex-direction:column;align-items:flex-start}}
 </style>
 
+<!-- SCHEMA: Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kimberly Holm",
+  "jobTitle": "Fractional Chief Marketing Officer",
+  "url": "https://kimberlyholm.com",
+  "image": "https://kimberlyholm.com/kimberly-holm-fractional-cmo.jpeg",
+  "description": "Fractional CMO with 30 years of marketing leadership experience across healthcare, higher education, nonprofit, public media, and agency sectors in Northeast Ohio.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kent",
+    "addressRegion": "OH",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.1534,
+      "longitude": -81.3579
+    },
+    "geoRadius": "100000"
+  },
+  "knowsAbout": [
+    "Marketing Strategy","Brand Strategy","Fractional CMO Services",
+    "Nonprofit Marketing","Healthcare Marketing","Higher Education Marketing",
+    "Demand Generation","Integrated Marketing Campaigns","Marketing Leadership","Interim CMO"
+  ],
+  "alumniOf": [
+    {"@type":"CollegeOrUniversity","name":"Indiana Wesleyan University"},
+    {"@type":"CollegeOrUniversity","name":"Anderson University"}
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Master of Business Administration",
+      "credentialCategory": "degree",
+      "recognizedBy": {"@type":"Organization","name":"Indiana Wesleyan University"}
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Google Ads Certification",
+      "credentialCategory": "certification",
+      "recognizedBy": {"@type":"Organization","name":"Google"}
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "HubSpot Certification",
+      "credentialCategory": "certification",
+      "recognizedBy": {"@type":"Organization","name":"HubSpot"}
+    }
+  ],
+  "sameAs": ["https://www.linkedin.com/in/kimberlyholm"]
+}
+</script>
+
+<!-- SCHEMA: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Kimberly Holm | Fractional CMO",
+  "url": "https://kimberlyholm.com",
+  "image": "https://kimberlyholm.com/kimberly-holm-fractional-cmo.jpeg",
+  "description": "Strategic marketing leadership for nonprofits, healthcare organizations, educational institutions, and mission-driven businesses in Northeast Ohio. Fractional CMO retainer, project-based engagements, and interim CMO support.",
+  "founder": {"@type":"Person","name":"Kimberly Holm"},
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kent",
+    "addressRegion": "OH",
+    "postalCode": "44240",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Northeast Ohio","Portage County","Summit County",
+    "Stark County","Cuyahoga County","Trumbull County","Mahoning County"
+  ],
+  "priceRange": "$$",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Fractional CMO Services",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Fractional CMO Retainer"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Project-Based Marketing Engagement"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Interim CMO Support"}}
+    ]
+  }
+}
+</script>
+
+<!-- SCHEMA: Services -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Fractional CMO Retainer",
+  "provider": {"@type":"Person","name":"Kimberly Holm","url":"https://kimberlyholm.com"},
+  "description": "Embedded strategic marketing leadership on a part-time retainer basis. Kimberly joins your leadership team, guides marketing strategy, and owns outcomes without the cost of a full-time CMO hire.",
+  "serviceType": "Fractional CMO",
+  "areaServed": "Northeast Ohio"
+}
+</script>
 
 <script type="application/ld+json">
-{ 
-  "@context":"https://schema.org", 
-  "@type":"ProfessionalService", 
-  "name":"Kimberly Holm", 
-  "url":"https://kimberlyholm.com", 
-  "description":"Fractional CMO providing strategic marketing leadership, communications strategy, brand development, and executive marketing support.", 
-  "areaServed":"Northeast Ohio", 
-  "founder":{ "@type":"Person", 
-  "name":"Kimberly A. Holm", 
-  "jobTitle":"Fractional Chief Marketing Officer" 
-}, 
-"serviceType":[ 
-  "Fractional CMO", 
-  "Marketing Strategy", 
-  "Brand Strategy", 
-  "Communications Planning", 
-  "Interim Marketing Leadership" 
-] } 
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Project-Based Marketing Engagement",
+  "provider": {"@type":"Person","name":"Kimberly Holm","url":"https://kimberlyholm.com"},
+  "description": "Focused marketing engagements with clear deliverables: brand repositioning, go-to-market strategy, campaign launch, or marketing audit.",
+  "serviceType": "Marketing Consulting",
+  "areaServed": "Northeast Ohio"
+}
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Interim CMO Support",
+  "provider": {"@type":"Person","name":"Kimberly Holm","url":"https://kimberlyholm.com"},
+  "description": "Bridge marketing leadership when your CMO or marketing director departs. Kimberly steps in to keep strategy moving, support the team, and maintain momentum while a permanent search is underway.",
+  "serviceType": "Interim CMO",
+  "areaServed": "Northeast Ohio"
+}
+</script>
+
+<!-- SCHEMA: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a fractional CMO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A fractional CMO is a senior marketing executive who works with an organization on a part-time or retainer basis, providing the same strategic leadership as a full-time Chief Marketing Officer without the cost of a permanent hire. They are embedded in the organization's leadership team and own marketing outcomes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is a fractional CMO different from a marketing consultant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A marketing consultant typically delivers a specific project or set of recommendations, then steps away. A fractional CMO is an ongoing strategic partner embedded in your leadership team, attending meetings, guiding decisions, managing execution, and accountable for results over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kinds of organizations benefit most from fractional CMO support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nonprofits, healthcare organizations, higher education institutions, and mission-driven businesses that need senior marketing leadership but cannot justify the cost of a full-time CMO. Organizations in leadership transition, rebrand, or growth phases also benefit significantly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a fractional CMO engagement typically work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Engagements begin with a conversation to understand your organization's goals, challenges, and current marketing state. From there, the structure is built around your needs: a retainer for ongoing leadership, a defined project scope, or interim support during a transition. Most retainer engagements involve a set number of hours per week and regular leadership team participation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a fractional CMO cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fractional CMO engagements are priced based on scope, hours, and the complexity of the work. They typically cost significantly less than a full-time CMO salary while providing the same level of strategic expertise. Pricing is discussed during an initial consultation based on your organization's specific needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why would a nonprofit hire a fractional CMO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nonprofits often have the most to gain from senior marketing leadership and the least budget to support a full-time hire. A fractional CMO brings donor psychology, community engagement, and mission-driven messaging expertise at a fraction of the cost, helping organizations grow awareness, increase donations, and build lasting community trust."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does AI replace the need for a fractional CMO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. AI tools can generate content and accelerate execution, but they cannot provide strategic judgment, organizational leadership, or the pattern recognition that comes from decades of experience. A fractional CMO who knows how to use AI as a force multiplier, while providing the oversight those tools lack, is a stronger value proposition today than before AI became widespread."
+      }
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
 
@@ -146,7 +340,7 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
 <nav>
   <a href="#" class="nav-name">Kimberly A. Holm</a>
   <a href="https://calendly.com/kimberlyaholm/connection-call"
-    class="nav-sta"
+    class="nav-cta"
     target="_blank">
     SCHEDULE A FREE CONSULTATION
     </a>
@@ -159,7 +353,7 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
     <h1 class="hero-headline">Marketing leadership that <em>serves the mission</em> and moves the numbers.</h1>
     <p class="hero-sub">Whether you're navigating growth, organizational change, or a marketing team that's stretched too thin, I bring senior-level strategy that helps you move forward with clarity, alignment, and measurable results, without the cost of a full-time executive.</p>
     <a href="https://calendly.com/kimberlyaholm/connection-call"
-      class="nav-sta"
+      class="btn-primary"
       target="_blank">
       SCHEDULE A FREE CONSULTATION
     </a>
@@ -263,6 +457,19 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
   </div>
 </section>
 
+<!-- AI SECTION -->
+<section class="ai-section reveal">
+  <p class="section-label">On AI and Marketing Leadership</p>
+  <h2 class="section-headline">AI can generate the content. It can't lead the strategy.</h2>
+  <div class="ai-body">
+    <p>A lot of organizations are asking whether they still need senior marketing leadership now that AI tools can produce briefs, campaigns, and content at speed. It's a fair question. AI is genuinely capable, and I use it every day to work smarter and move faster on behalf of my clients.</p>
+    <p>But there's a gap between output and outcomes. AI can draft a positioning statement. It can't tell you why your last one didn't land, or that the real problem wasn't the message, it was internal misalignment that never made it into the brief. It can generate a campaign. It can't read the room in a board meeting, navigate a stakeholder whose priorities just shifted, or make the call that protects your brand when circumstances change faster than a content calendar can.</p>
+    <p>That kind of judgment comes from pattern recognition built over time, across organizations, through the specific pressures that mission-driven work creates. Healthcare systems, universities, public media, nonprofits, these aren't environments where you can optimize your way to trust. They require someone who understands the terrain.</p>
+    <p>What I offer is the strategic leadership that makes AI useful: someone who knows what questions to ask, what the answers mean, and what to do next. Organizations that replace marketing judgment with marketing tools often find they've traded direction for volume. More content, less clarity. A fractional CMO who knows how to use these tools and how to lead through complexity is a sharper value proposition now than it was five years ago, not a weaker one.</p>
+  </div>
+  <p class="ai-pullquote">The organizations I work with don't need more content. They need someone who knows <span>what the content is for.</span></p>
+</section>
+
 <!-- PROOF -->
 <section class="proof reveal">
   <p class="section-label">Results</p>
@@ -304,34 +511,27 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
   </div>
 </section>
 
-<!-- About the Founder -->
+<!-- ABOUT -->
 <section id="about" class="reveal" style="padding: 80px 5%;"> 
-    <div style="display:block; max-width:800px;">
-      <p class="section-label">About Kimberly</p>
-      <h2 class="section-headline">Meet Kimberly Holm</h2>
-      <img
-        src="kimberly-holm-fractional-cmo.jpeg"
-        alt="Kimberly Holm, Fractional Chief Marketing Officer serving Northeast Ohio"
-        style="width:260px; height:260px; border-radius:50%; object-fit:cover; object-position:center 15%; border:4px solid #e8e0d8; margin-bottom:2rem; display:block;"
-      >
-      <p class="section-body" style="margin-bottom:1.4em;">I did not start my career in marketing. I started in healthcare operations, which means before I ever wrote a creative brief or launched a campaign, I understood what it felt like to work inside an organization trying to accomplish important goals with limited resources. That perspective never left me. In many ways, it is still the most valuable thing I bring to my work today.</p>
-
-      <p class="section-body" style="margin-bottom:1.4em;">Over the past 30 years, I have worked in healthcare, higher education, public media, nonprofits, specialty insurance, and agency environments. I have been the client responsible for results, and I have been the partner responsible for delivering them. Those experiences taught me how to align strategy, leadership, and execution so organizations can move forward with confidence.</p>
-
-      <p class="section-body" style="margin-bottom:1.4em;">Throughout my career, I have led integrated marketing campaigns, developed brand and messaging strategies, mentored cross-functional teams, and built marketing systems designed to support long-term growth. Some of the work I am most proud of happened in organizations facing real constraints. Those situations often require the clearest thinking, the strongest leadership, and the most creative solutions.</p>
-
-      <p class="section-body" style="margin-bottom:1.4em;">One experience that continues to shape my work, especially with nonprofits, was overseeing individual giving and corporate support alongside marketing. That responsibility gave me a deeper understanding of donor psychology, stewardship, and the relationship between mission, messaging, and action. It also taught me that successful organizations communicate differently with every audience while remaining true to the same core purpose.</p>
-
-      <p class="section-body" style="margin-bottom:1.4em;">Clients and colleagues have often valued my ability to see both the strategic picture and the operational realities behind it. I believe good marketing leadership requires both. Strong ideas matter, but so does understanding how decisions affect teams, budgets, stakeholders, and the people doing the work every day.</p>
-
-      <p class="section-body" style="margin-bottom:1.4em;">I started this practice because I saw too many organizations doing meaningful work without access to senior marketing leadership. Fractional support is a practical way to close that gap. Organizations gain executive-level strategy, guidance, and accountability without the cost of a full-time hire.</p>
-
-      <p class="section-body" style="margin-bottom:1.4em;">Today I work with nonprofits, healthcare organizations, educational institutions, and growing businesses throughout Northeast Ohio as a Fractional CMO, marketing strategist, and trusted executive partner.</p>
-
-      <p class="section-body" style="margin-bottom:1.4em;">If that sounds like the kind of partnership you are looking for, I would welcome the opportunity to connect.</p>
-    </div>
+  <div style="display:block; max-width:800px;">
+    <p class="section-label">About Kimberly</p>
+    <h2 class="section-headline">Meet Kimberly Holm</h2>
+    <img
+      src="kimberly-holm-fractional-cmo.jpeg"
+      alt="Kimberly Holm, Fractional Chief Marketing Officer serving Northeast Ohio"
+      style="width:260px; height:260px; border-radius:50%; object-fit:cover; object-position:center 15%; border:4px solid #e8e0d8; margin-bottom:2rem; display:block;"
+    >
+    <p class="section-body" style="margin-bottom:1.4em;">I did not start my career in marketing. I started in healthcare operations, which means before I ever wrote a creative brief or launched a campaign, I understood what it felt like to work inside an organization trying to accomplish important goals with limited resources. That perspective never left me. In many ways, it is still the most valuable thing I bring to my work today.</p>
+    <p class="section-body" style="margin-bottom:1.4em;">Over the past 30 years, I have worked in healthcare, higher education, public media, nonprofits, specialty insurance, and agency environments. I have been the client responsible for results, and I have been the partner responsible for delivering them. Those experiences taught me how to align strategy, leadership, and execution so organizations can move forward with confidence.</p>
+    <p class="section-body" style="margin-bottom:1.4em;">Throughout my career, I have led integrated marketing campaigns, developed brand and messaging strategies, mentored cross-functional teams, and built marketing systems designed to support long-term growth. Some of the work I am most proud of happened in organizations facing real constraints. Those situations often require the clearest thinking, the strongest leadership, and the most creative solutions.</p>
+    <p class="section-body" style="margin-bottom:1.4em;">One experience that continues to shape my work, especially with nonprofits, was overseeing individual giving and corporate support alongside marketing. That responsibility gave me a deeper understanding of donor psychology, stewardship, and the relationship between mission, messaging, and action. It also taught me that successful organizations communicate differently with every audience while remaining true to the same core purpose.</p>
+    <p class="section-body" style="margin-bottom:1.4em;">Clients and colleagues have often valued my ability to see both the strategic picture and the operational realities behind it. I believe good marketing leadership requires both. Strong ideas matter, but so does understanding how decisions affect teams, budgets, stakeholders, and the people doing the work every day.</p>
+    <p class="section-body" style="margin-bottom:1.4em;">I started this practice because I saw too many organizations doing meaningful work without access to senior marketing leadership. Fractional support is a practical way to close that gap. Organizations gain executive-level strategy, guidance, and accountability without the cost of a full-time hire.</p>
+    <p class="section-body" style="margin-bottom:1.4em;">Today I work with nonprofits, healthcare organizations, educational institutions, and growing businesses throughout Northeast Ohio as a Fractional CMO, marketing strategist, and trusted executive partner.</p>
+    <p class="section-body" style="margin-bottom:1.4em;">If that sounds like the kind of partnership you are looking for, I would welcome the opportunity to connect.</p>
+  </div>
 </section>
-  
+
 <!-- WHO -->
 <section class="reveal">
   <div class="who-layout">
@@ -406,6 +606,50 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq reveal">
+  <p class="section-label">Common Questions</p>
+  <h2 class="section-headline">What you may be wondering.</h2>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <p class="faq-q">What is a fractional CMO?</p>
+      <p class="faq-a">A fractional CMO is a senior marketing executive who works with an organization on a part-time or retainer basis, providing the same strategic leadership as a full-time Chief Marketing Officer without the cost of a permanent hire. They are embedded in the leadership team and own marketing outcomes.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">How is a fractional CMO different from a marketing consultant?</p>
+      <p class="faq-a">A marketing consultant typically delivers a specific project or set of recommendations, then steps away. A fractional CMO is an ongoing strategic partner embedded in your leadership team, attending meetings, guiding decisions, managing execution, and accountable for results over time.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">What kinds of organizations benefit most from fractional CMO support?</p>
+      <p class="faq-a">Nonprofits, healthcare organizations, higher education institutions, and mission-driven businesses that need senior marketing leadership but cannot justify the cost of a full-time CMO. Organizations in leadership transition, rebrand, or growth phases also benefit significantly.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">How does a fractional CMO engagement typically work?</p>
+      <p class="faq-a">Engagements begin with a conversation to understand your organization's goals, challenges, and current marketing state. From there, the structure is built around your needs: a retainer for ongoing leadership, a defined project scope, or interim support during a transition. Most retainer engagements involve a set number of hours per week and regular leadership team participation.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">What does a fractional CMO cost?</p>
+      <p class="faq-a">Fractional CMO engagements are priced based on scope, hours, and the complexity of the work. They typically cost significantly less than a full-time CMO salary while providing the same level of strategic expertise. Pricing is discussed during an initial consultation based on your organization's specific needs.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Why would a nonprofit hire a fractional CMO?</p>
+      <p class="faq-a">Nonprofits often have the most to gain from senior marketing leadership and the least budget to support a full-time hire. A fractional CMO brings donor psychology, community engagement, and mission-driven messaging expertise at a fraction of the cost, helping organizations grow awareness, increase donations, and build lasting community trust.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Does AI replace the need for a fractional CMO?</p>
+      <p class="faq-a">No. AI tools can generate content and accelerate execution, but they cannot provide strategic judgment, organizational leadership, or the pattern recognition that comes from decades of experience. A fractional CMO who knows how to use AI as a force multiplier, while providing the oversight those tools lack, is a stronger value proposition today than before AI became widespread.</p>
+    </div>
+
+  </div>
+</section>
+
 <!-- TESTIMONIALS -->
 <section class="testimonials reveal">
   <p class="section-label">What Clients Say</p>
@@ -413,7 +657,7 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
   <p class="section-body">The best measure of this work is what the people I've worked alongside have to say.</p>
   <div class="testimonials-placeholder">
     <p class="testimonials-placeholder-text">"Throughout my career, I've had the opportunity to work alongside healthcare systems, educational institutions, nonprofits, public media organizations, and growing businesses across Northeast Ohio."</p>
-    <p class="testimonials-placeholder-sub">Formal testimonials are being added soon, but long-term partnerships, measurable outcomes, and continued referrals have been the strongest reflection of the work iteself.</p>
+    <p class="testimonials-placeholder-sub">Formal testimonials are being added soon, but long-term partnerships, measurable outcomes, and continued referrals have been the strongest reflection of the work itself.</p>
   </div>
 </section>
 
@@ -426,7 +670,7 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
     class="btn-light"
     target="_blank">
     SCHEDULE A FREE CONSULTATION
-    </a></a>
+  </a>
 </section>
 
 <!-- FOOTER -->
@@ -436,7 +680,6 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
 </footer>
 
 <script>
-  // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -450,3 +693,5 @@ footer{padding:2.5rem 8vw;border-top:1px solid #d4cfc4;display:flex;justify-cont
 
 </body>
 </html>
+
+
